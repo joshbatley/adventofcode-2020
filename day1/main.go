@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	inputs := loadInput()
+	inputs := loadInputs()
 
 	var found int
 	for _, v1 := range inputs {
@@ -44,7 +44,7 @@ func main() {
 
 }
 
-func loadInput() []int {
+func loadInputs() []int {
 	dat, err := ioutil.ReadFile("./inputs.json")
 	if err != nil {
 		panic(err)
