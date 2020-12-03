@@ -73,7 +73,6 @@ func loadInputs() []input {
 
 	var d []input
 	scanner := bufio.NewScanner(file)
-	// 9-10 m: mmmmnxmmmwm
 
 	for scanner.Scan() {
 		strs := strings.Split(scanner.Text(), ": ")
